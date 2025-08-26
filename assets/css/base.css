@@ -97,10 +97,13 @@ body{
 header {
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: sticky;
     align-items: stretch;
     margin-block: var(--size-md);
-    margin-inline: var(--size-lg);
+    padding-inline: var(--size-lg);
+    top: 0;
+    z-index: 1000;
+    background-color: var(--background-color);
 }
 
 .header-logo {
@@ -130,10 +133,10 @@ header {
 
 .navbar {
     position: absolute;
-    inset-block-start: var(--size-xxl);
+    inset-block-start: var(--size-2xl);
     inset-inline-end: var(--size-md);
     background-color: var(--surface-color);
-    padding-block: var(--size-sm);
+    padding-block: var(--size-xs);
     opacity: 0;
     pointer-events: none;
     clip-path: inset(0 0 0 100%);
@@ -195,7 +198,7 @@ main {
 }
 
 .banner h1    {
-    font-size: var(--fs-h1);
+    font-size: var(--fs-xl);
     font-weight: var(--fw-bold);
     text-transform:capitalize;
     line-height: var(--lh-tight);
@@ -264,7 +267,6 @@ main {
 
 .card-image {
     background-color: var(--background-color);
-    border-radius: var(--radius-xs);  
     aspect-ratio: 3/2;   
     max-width: 64em;     
     overflow: hidden;  
@@ -366,6 +368,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;   
     row-gap: var(--size-sm); 
+    width: 100%;
 }
 
 .header-logo {
@@ -379,8 +382,7 @@ header {
 }
 
     .navbar {
-        position: sticky;
-        z-index: 1000;
+        position: relative;
         opacity: 1;
         transform: none;
         pointer-events: auto;
@@ -389,8 +391,8 @@ header {
         clip-path: none;
         contain: none;
         max-inline-size: none;
-        top: 0;
-        margin-block-end: var(--size-2xl);
+        margin-block-start: var(--size-lg);
+        width: 100%;
 
     }
 
@@ -414,6 +416,12 @@ header {
     .banner {
         min-block-size: 50vh; 
         margin-block: var(--size-lg);
+        gap: var(--size-lg);
+        
+    }
+
+    .banner h1 {
+        font-size: var(--fs-h1);
     }
 
     .banner p {

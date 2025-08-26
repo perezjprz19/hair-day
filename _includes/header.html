@@ -9,4 +9,14 @@
     aria-controls="nav-links"
     aria-expanded="false">
   </button>
+
+  <nav id="main-nav" class="navbar" aria-label="Primary navigation">
+  <ul class="nav-links" id="nav-links">
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/services.html' | relative_url }}">Services</a></li>
+    <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+    <li><a href="{{ '/appointments.html' | relative_url }}">Book Now</a></li>
+  </ul>
+</nav>
+
 </header>
