@@ -386,7 +386,7 @@ header {
         opacity: 1;
         transform: none;
         pointer-events: auto;
-        background-color: var(--background-color);
+        background-color: transparent;
         inset: unset;
         clip-path: none;
         contain: none;
