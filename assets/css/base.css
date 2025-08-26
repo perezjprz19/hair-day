@@ -99,7 +99,7 @@ header {
     justify-content: space-between;
     position: relative;
     align-items: stretch;
-    margin-block: var(--size-2xl);
+    margin-block: var(--size-md);
     margin-inline: var(--size-lg);
 }
 
@@ -188,8 +188,7 @@ main {
     flex-direction: column;
     padding-block: var(--size-lg);
     min-block-size: clamp(20rem, 50vh, 34rem);
-    margin-block: var(--size-xl);
-    gap: var(--size-sm);
+    gap: var(--size-lg);
     justify-content: center;
     align-items:flex-start;
     text-align: left;
@@ -203,7 +202,7 @@ main {
 }
 
 .banner p {
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
     font-weight: var(--fw-medium);
     line-height: var(--lh-normal);
     font-style: italic;
@@ -416,6 +415,10 @@ header {
         min-block-size: 50vh; 
         margin-block: var(--size-lg);
     }
+
+    .banner p {
+        font-size: var(--fs-lg);
+    }
     .cta-btn {
         font-size: var(--fs-lg);
     }
@@ -424,4 +427,5 @@ header {
 
 
 
-
+   
+    

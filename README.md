@@ -90,4 +90,3 @@ Through this project, I practiced:
 
 ##  Author
 Jessica Shellenhamer  
-*Front-End Developer in progress*  
