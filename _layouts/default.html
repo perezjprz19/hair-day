@@ -14,7 +14,7 @@
         rel="stylesheet">
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="{{ 'assets/css/base.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
 
 </head>
 
@@ -22,7 +22,7 @@
     {% include header.html %}
     {% include nav.html %}
     <div class="container">
-        <main class="container">
+        <main>
             {{ content }}
 
         </main>
@@ -30,7 +30,7 @@
 
     </div>
 
-    <script defer src="{{ 'assets/js/scripts.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
 </body>
 
 </html>
