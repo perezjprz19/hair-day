@@ -5,45 +5,59 @@ permalink: /
 slug: page-home
 ---
 <section class="banner">
-    <h1 class="banner-heading">Everyone Deserves a Great <span class="accent">Hair Day</span></h1>
-    <p>Indulge in personalized service crafted just for you.</p>
-    <button class="cta-btn" type="button">Reserve Your Spot</button>
+    <h1 class="banner-heading">Welcome to Your Best <span class="accent">Hair Day</span></h1>
+    <p>Premium cuts, bold color, and luxury nails - for those who want to turn heads.</p>
+
+    <p class="promo">New Client Offer: First-Time Guests Save 15%. Offer valid through {{ site.time | date: '%m/%y' }}.
+    </p>
+
+    <div class="banner-cta">
+        <button class="cta-btn" type="button">Reserve Your Spot</button>
+        <a href="#section-gallery" class="gallery-cta">Get Inspired</a>
+    </div>
+
 </section>
 
 <section class="card-container">
-    <article class="card main-left">
-        <div class="card-image">
-            <img src="assets/img/hair-color-thumbnail.jpg" alt="">
-        </div>
-        <div class="card-body">
-            <h3 class="card-heading">Radiant Color Tailored to You</h3>
-            <p class="card-par">Enhance your natural beauty or embrace something bold. Our expert colorists
-                create custom shades that bring out your best features and your confidence.</p>
-        </div>
+    <h2 id="section-gallery">Discover Your Next Look</h2>
+    <div class="card-inner">
 
-    </article>
+        <article class="card main-left">
+            <div class="card-image">
+                <img src="assets/img/hair-color-thumbnail.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <h3 class="card-heading">Radiant Color Tailored to You</h3>
+                <p class="card-par">Enhance your natural beauty or embrace something bold. Our expert colorists
+                    create custom shades that bring out your best features and your confidence.</p>
+            </div>
 
-    <article class=" card main-center">
-        <div class="card-image">
-            <img src="assets/img/make-up-thumbnail.jpg" alt="">
-        </div>
-        <div class="card-body">
-            <h3 class="card-heading">Flawless Make-Up for Every Occasion</h3>
-            <p class="card-par">From subtle elegance to full glam, our professional artists use premium
-                products and techniques to highlight your unique style. Look and feel your most radiant.</p>
-        </div>
+        </article>
 
-    </article>
+        <article class=" card main-center">
+            <div class="card-image">
+                <img src="assets/img/make-up-thumbnail.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <h3 class="card-heading">Flawless Make-Up for Every Occasion</h3>
+                <p class="card-par">From subtle elegance to full glam, our professional artists use premium
+                    products and techniques to highlight your unique style. Look and feel your most radiant.</p>
+            </div>
 
-    <article class="card main-right">
-        <div class="card-image">
-            <img src="assets/img/nails-thumbnail.jpg" alt="">
-        </div>
-        <div class="card-body">
-            <h3 class="card-heading">Nails that Make a Statement</h3>
-            <p class="card-par">Pamper your hands and feet with precision manicures, indulgent pedicures,
-                and trend-forward nail art — all designed to leave you polished and confident.</p>
-        </div>
+        </article>
 
-    </article>
+        <article class="card main-right">
+            <div class="card-image">
+                <img src="assets/img/nails-thumbnail.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <h3 class="card-heading">Nails that Make a Statement</h3>
+                <p class="card-par">Pamper your hands and feet with precision manicures, indulgent pedicures,
+                    and trend-forward nail art — all designed to leave you polished and confident.</p>
+            </div>
+
+        </article>
+
+    </div>
+
 </section>
