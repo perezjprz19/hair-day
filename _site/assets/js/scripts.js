@@ -5,10 +5,10 @@ const navbar = document.getElementById('main-nav');
 //mobile show/hide navigation
 
 navBtn.addEventListener('click', () => {
-        const open = !navbar.classList.contains('expanded');
-        navBtn.classList.toggle('isactive', open);
-        navbar.classList.toggle('expanded', open);
-        navBtn.setAttribute('aria-expanded', open);
+  const open = !navbar.classList.contains('expanded');
+  navBtn.classList.toggle('isactive', open);
+  navbar.classList.toggle('expanded', open);
+  navBtn.setAttribute('aria-expanded', open);
 
 });
 
@@ -34,5 +34,3 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 cards.forEach(card => observer.observe(card));
-
-
